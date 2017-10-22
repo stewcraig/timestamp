@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Timestamp microservice</title>
+</head>
+
+<body>
+    <h1>Timestamp miscroservice</h1>
+    <p>Microservice that provides unix timestamp and natural languge date for a given date or timestamp.</p>
+    <p>Unix timestamp is the number of milliseconds since 1 January 1970.</p>
+
+    <h2>Use</h2>
+    <p>Enter date or unix time stamp in address bar of browser. See example inputs below.</p>
+    <p class="block">Natural date:</p>
+    <pre class="block"><code >http://127.0.0.1:8080/1 January 2014</code></pre>
+    <br>
+    <p class="block">Unix date:</p>
+    <pre class="block"><code>http://127.0.0.1:8080/1388494800000</code></pre>
+
+    <h2>Output</h2>
+    <p>Unix timestamp and natural lanaguage date will be output in the format below.</p>
+    <pre><code>{"unix": 1388494800000, "natural":"1 January 2014"}</code></pre>
+    <p>If format of input is not recognised then <span><code>null</code></span> will be returned for both unix timestamp and natural date.</p>
+</body>
+
+</html>
