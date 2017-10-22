@@ -25,7 +25,7 @@ app.get('/:date', (req, res) => {
     natural: naturalDate,
   };
 
-  res.end(JSON.stringify(resDate));
+  res.end(JSON.stringify(resDate,null,2));
 });
 
 app.listen(process.env.PORT || port);
