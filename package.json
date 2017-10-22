@@ -1,19 +1,23 @@
 {
   "name": "timestamp",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "engines": {
+    "node": "8.7.0",
+    "npm": "5.5.1"
   },
-  "author": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "stewcraig",
   "license": "ISC",
-  "description": "",
+  "description": "Timestamp microservice",
   "dependencies": {
-    "express": "^4.16.2",
-    "nodemon": "^1.12.1"
+    "express": "^4.16.2"
   },
   "devDependencies": {
     "eslint-config-airbnb-base": "^12.0.2",
-    "eslint-plugin-import": "^2.7.0"
+    "eslint-plugin-import": "^2.7.0",
+    "nodemon": "^1.12.1"
   }
 }

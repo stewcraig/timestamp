@@ -28,4 +28,4 @@ app.get('/:date', (req, res) => {
   res.end(JSON.stringify(resDate));
 });
 
-app.listen(port);
+app.listen(process.env.PORT || port);
